@@ -7,7 +7,7 @@ import discord4j.core.object.entity.channel.MessageChannel;
 public class Main {
 
     public static void main(final String[] args) {
-        final String token = args[0];
+        final String token = args[0]; // el token del bot no lo pude conseguir debido al gran numero de personas con la misma IP que entramos al mismo sitio
         final DiscordClient client = DiscordClient.create(token);
         final GatewayDiscordClient gateway = client.login().block();
 
